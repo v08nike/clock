@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+.wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+// ====================
+@mixin fitMargin0 {
+  width: fit-content;
+  margin-inline: auto;
+}

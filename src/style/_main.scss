@@ -1,0 +1,25 @@
+#clock {
+  user-select: none;
+  .wrap-time {
+    padding-top: 1em;
+    @include fitMargin0;
+    .time {
+      font-size: 15vw;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      .colon {
+        transform: translateY(-5%);
+        margin: 0 0.01em;
+      }
+      .time_t {
+        margin-left: 0.25em;
+      }
+    }
+  }
+  .wrap-date {
+    @include fitMargin0;
+    padding-top: 1em;
+    font-size: 6vw;
+  }
+}
