@@ -6,8 +6,8 @@ const time_h = document.querySelector("#clock .time_h"),
 
 setTime()
 
-while (true) {
-  if (!(new Date().getMilliseconds() % 100)) {
+while (1) {
+  if (!Number((new Date().getMilliseconds() / 100).toFixed(0))) {
     startClock()
     break
   }

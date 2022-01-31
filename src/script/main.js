@@ -13,6 +13,9 @@ const updateMin = (date) => {
 }
 const updateHou = (date) => {
   hou = date.getHours()
+  if (!hou) {
+    updateDate(date)
+  }
   ampm = hou >= 12 ? "PM" : "AM"
   hou = hou % 12
   hou = hou ? hou : 12
@@ -38,13 +41,10 @@ const startClock = () => {
         updateMin(currentDate)
         if (!min) {
           updateHou(currentDate)
-          if (!hou) {
-            updateDate(currentDate)
-          }
         }
       }
     }
-  }, 100)
+  }, 1000)
 }
 const setTime = () => {
   const dateCurrent = new Date()
