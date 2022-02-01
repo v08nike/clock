@@ -1,5 +1,4 @@
 #clock {
-  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -21,8 +20,21 @@
     }
     .date {
       @include fitMargin0;
-      margin-top: 1em;
-      font-size: 6vw;
+      margin-top: 1.25em;
+      font-size: 5vw;
     }
+  }
+}
+.splash {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: opacity 3s ease-out;
+  opacity: 1;
+  &.remove {
+    opacity: 0;
   }
 }
