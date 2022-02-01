@@ -4,16 +4,16 @@
     padding-top: 1em;
     @include fitMargin0;
     .time {
+      font-family: "Share Tech Mono", monospace;
       font-size: 15vw;
       display: flex;
       align-items: center;
       font-weight: 600;
       .colon {
-        transform: translateY(-5%);
-        margin: 0 0.01em;
+        transform: translateY(-7%);
       }
       .time_t {
-        margin-left: 0.25em;
+        margin-left: 0.3em;
       }
     }
   }
