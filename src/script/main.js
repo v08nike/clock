@@ -50,6 +50,7 @@ const startClock = () => {
     setTitle()
     if (!min) {
       updateHou(currentDate)
+      setTitle()
     }
   }
 }
