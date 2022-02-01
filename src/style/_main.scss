@@ -1,11 +1,14 @@
 #clock {
   user-select: none;
-  .wrap-time {
-    padding-top: 1em;
-    @include fitMargin0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
+  .wrap {
     .time {
+      @include fitMargin0;
       font-family: "Share Tech Mono", monospace;
-      font-size: 15vw;
+      font-size: 16vw;
       display: flex;
       align-items: center;
       font-weight: 600;
@@ -16,10 +19,10 @@
         margin-left: 0.3em;
       }
     }
-  }
-  .wrap-date {
-    @include fitMargin0;
-    padding-top: 1em;
-    font-size: 6vw;
+    .date {
+      @include fitMargin0;
+      margin-top: 1em;
+      font-size: 6vw;
+    }
   }
 }
